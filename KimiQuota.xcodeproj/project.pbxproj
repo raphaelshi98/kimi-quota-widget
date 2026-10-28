@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000000000000000000050 /* KimiQuotaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000030 /* KimiQuotaApp.swift */; };
+		1A0000000000000000000051 /* KimiLocalServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000031 /* KimiLocalServer.swift */; };
+		1A0000000000000000000052 /* UsageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000032 /* UsageClient.swift */; };
+		1A0000000000000000000053 /* UsageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000033 /* UsageStore.swift */; };
+		1A0000000000000000000054 /* MenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000034 /* MenuContentView.swift */; };
+		1A0000000000000000000055 /* QuotaSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000035 /* QuotaSnapshot.swift */; };
+		1A0000000000000000000056 /* KimiQuotaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000036 /* KimiQuotaWidget.swift */; };
+		1A0000000000000000000057 /* WidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000037 /* WidgetViews.swift */; };
+		1A0000000000000000000058 /* KimiQuotaWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000005 /* KimiQuotaWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A0000000000000000000065 /* QuotaSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000000000000000000035 /* QuotaSnapshot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A0000000000000000000020 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A0000000000000000000011;
+			remoteInfo = KimiQuotaWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0000000000000000000018 /* Embed App Extensions */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nEXTENSION=\"${BUILT_PRODUCTS_DIR}/KimiQuotaWidget.appex\"\nDESTINATION=\"${TARGET_BUILD_DIR}/${PLUGINS_FOLDER_PATH}\"\nmkdir -p \"$DESTINATION\"\nditto \"$EXTENSION\" \"$DESTINATION/KimiQuotaWidget.appex\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A0000000000000000000004 /* KimiQuota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KimiQuota.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000000000000000000005 /* KimiQuotaWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KimiQuotaWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000000000000000000030 /* KimiQuotaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimiQuotaApp.swift; sourceTree = "<group>"; };
+		1A0000000000000000000031 /* KimiLocalServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimiLocalServer.swift; sourceTree = "<group>"; };
+		1A0000000000000000000032 /* UsageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageClient.swift; sourceTree = "<group>"; };
+		1A0000000000000000000033 /* UsageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageStore.swift; sourceTree = "<group>"; };
+		1A0000000000000000000034 /* MenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentView.swift; sourceTree = "<group>"; };
+		1A0000000000000000000035 /* QuotaSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotaSnapshot.swift; sourceTree = "<group>"; };
+		1A0000000000000000000036 /* KimiQuotaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KimiQuotaWidget.swift; sourceTree = "<group>"; };
+		1A0000000000000000000037 /* WidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViews.swift; sourceTree = "<group>"; };
+		1A0000000000000000000038 /* KimiQuota.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KimiQuota.entitlements; sourceTree = "<group>"; };
+		1A0000000000000000000039 /* KimiQuotaWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KimiQuotaWidget.entitlements; sourceTree = "<group>"; };
+		1A0000000000000000000040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0000000000000000000041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000000000000000000014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000000000000000000015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000006 /* KimiQuota */,
+				1A0000000000000000000007 /* KimiQuotaWidget */,
+				1A0000000000000000000008 /* Shared */,
+				1A0000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000004 /* KimiQuota.app */,
+				1A0000000000000000000005 /* KimiQuotaWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0000000000000000000006 /* KimiQuota */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000030 /* KimiQuotaApp.swift */,
+				1A0000000000000000000031 /* KimiLocalServer.swift */,
+				1A0000000000000000000032 /* UsageClient.swift */,
+				1A0000000000000000000033 /* UsageStore.swift */,
+				1A0000000000000000000034 /* MenuContentView.swift */,
+				1A0000000000000000000038 /* KimiQuota.entitlements */,
+				1A0000000000000000000040 /* Info.plist */,
+			);
+			path = KimiQuota;
+			sourceTree = "<group>";
+		};
+		1A0000000000000000000007 /* KimiQuotaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000036 /* KimiQuotaWidget.swift */,
+				1A0000000000000000000037 /* WidgetViews.swift */,
+				1A0000000000000000000039 /* KimiQuotaWidget.entitlements */,
+				1A0000000000000000000041 /* Info.plist */,
+			);
+			path = KimiQuotaWidget;
+			sourceTree = "<group>";
+		};
+		1A0000000000000000000008 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000035 /* QuotaSnapshot.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0000000000000000000010 /* KimiQuota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000000000000000000021 /* Build configuration list for PBXNativeTarget "KimiQuota" */;
+			buildPhases = (
+				1A0000000000000000000012 /* Sources */,
+				1A0000000000000000000014 /* Frameworks */,
+				1A0000000000000000000016 /* Resources */,
+				1A0000000000000000000018 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0000000000000000000019 /* PBXTargetDependency */,
+			);
+			name = KimiQuota;
+			productName = KimiQuota;
+			productReference = 1A0000000000000000000004 /* KimiQuota.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A0000000000000000000011 /* KimiQuotaWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0000000000000000000022 /* Build configuration list for PBXNativeTarget "KimiQuotaWidget" */;
+			buildPhases = (
+				1A0000000000000000000013 /* Sources */,
+				1A0000000000000000000015 /* Frameworks */,
+				1A0000000000000000000017 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KimiQuotaWidget;
+			productName = KimiQuotaWidget;
+			productReference = 1A0000000000000000000005 /* KimiQuotaWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					1A0000000000000000000010 = {
+						CreatedOnToolsVersion = 26.0;
+						ProvisioningStyle = Automatic;
+					};
+					1A0000000000000000000011 = {
+						CreatedOnToolsVersion = 26.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000000000000000000023 /* Build configuration list for PBXProject "KimiQuota" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 1A0000000000000000000002;
+			productRefGroup = 1A0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0000000000000000000010 /* KimiQuota */,
+				1A0000000000000000000011 /* KimiQuotaWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000000000000000000016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000000000000000000017 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0000000000000000000012 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000000000000000000050 /* KimiQuotaApp.swift in Sources */,
+				1A0000000000000000000051 /* KimiLocalServer.swift in Sources */,
+				1A0000000000000000000052 /* UsageClient.swift in Sources */,
+				1A0000000000000000000053 /* UsageStore.swift in Sources */,
+				1A0000000000000000000054 /* MenuContentView.swift in Sources */,
+				1A0000000000000000000055 /* QuotaSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0000000000000000000013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000000000000000000056 /* KimiQuotaWidget.swift in Sources */,
+				1A0000000000000000000057 /* WidgetViews.swift in Sources */,
+				1A0000000000000000000065 /* QuotaSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0000000000000000000019 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A0000000000000000000011 /* KimiQuotaWidget */;
+			targetProxy = 1A0000000000000000000020 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000000000000000000024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				APP_GROUP_IDENTIFIER = "$(DEVELOPMENT_TEAM).com.example.KimiQuota.shared";
+				KIMI_QUOTA_BUNDLE_ID = com.example.KimiQuota;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A0000000000000000000025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				APP_GROUP_IDENTIFIER = "$(DEVELOPMENT_TEAM).com.example.KimiQuota.shared";
+				KIMI_QUOTA_BUNDLE_ID = com.example.KimiQuota;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A0000000000000000000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KimiQuota/KimiQuota.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KimiQuota/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KIMI_QUOTA_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		1A0000000000000000000027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KimiQuota/KimiQuota.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KimiQuota/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KIMI_QUOTA_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		1A0000000000000000000028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KimiQuotaWidget/KimiQuotaWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KimiQuotaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../../../../Frameworks",
+					"@executable_path/../../../../PlugIns",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KIMI_QUOTA_BUNDLE_ID).widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		1A0000000000000000000029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KimiQuotaWidget/KimiQuotaWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KimiQuotaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../../../../Frameworks",
+					"@executable_path/../../../../PlugIns",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(KIMI_QUOTA_BUNDLE_ID).widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0000000000000000000021 /* Build configuration list for PBXNativeTarget "KimiQuota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000000000000000000026 /* Debug */,
+				1A0000000000000000000027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000000000000000000022 /* Build configuration list for PBXNativeTarget "KimiQuotaWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000000000000000000028 /* Debug */,
+				1A0000000000000000000029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000000000000000000023 /* Build configuration list for PBXProject "KimiQuota" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000000000000000000024 /* Debug */,
+				1A0000000000000000000025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0000000000000000000001 /* Project object */;
+}

@@ -25,6 +25,7 @@ struct KimiQuotaWidgetEntryView: View {
                 endPoint: .bottomTrailing
             )
         }
+        .widgetURL(URL(string: "kimi-quota://manage"))
     }
 }
 

@@ -1,3 +1,4 @@
+import Foundation
 import SwiftUI
 import WidgetKit
 
@@ -25,7 +26,7 @@ struct KimiQuotaProvider: TimelineProvider {
 @main
 struct KimiQuotaWidget: Widget {
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: "KimiQuota", provider: KimiQuotaProvider()) { entry in
+        StaticConfiguration(kind: Bundle.main.bundleIdentifier ?? "KimiQuota", provider: KimiQuotaProvider()) { entry in
             KimiQuotaWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Kimi 额度")

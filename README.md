@@ -1,12 +1,12 @@
 # Kimi 额度
 
-一个原生 macOS 小组件，通过本机 Kimi Code CLI 显示账号额度。包含菜单栏后台 App 和 WidgetKit 小号、中号小组件。
+一个原生 macOS 小组件，通过本机 Kimi Code CLI 显示账号额度。包含后台 App 和 WidgetKit 小号、中号小组件。
 
 ## 功能
 
 - 显示接口实际提供的 5 小时、每周等额度窗口
 - 显示剩余比例、重置时间和最近更新时间
-- 后台每 5 分钟刷新，也可在菜单栏手动刷新
+- 后台每 5 分钟刷新，点击小组件可打开管理窗口手动刷新
 - 使用 App Group 在后台 App 与 Widget 之间共享额度快照
 - 账号令牌只用于本机回环地址请求，不写入快照或日志
 
@@ -67,7 +67,7 @@ APP_GROUP_IDENTIFIER=YOUR_TEAM_ID.com.example.KimiQuota.shared \
 3. 搜索“Kimi 额度”。
 4. 将小号或中号小组件拖到桌面或通知中心。
 
-保持菜单栏中的“Kimi 额度”运行即可自动刷新，也可以在其中开启“登录时启动”。
+后台 App 不会显示菜单栏图标。点击小组件可打开管理窗口，使用手动刷新、登录时启动或退出功能。
 
 ## 工作原理与隐私
 
@@ -91,7 +91,7 @@ APP_GROUP_IDENTIFIER=YOUR_TEAM_ID.com.example.KimiQuota.shared \
 ## 源码结构
 
 ```text
-KimiQuota/              菜单栏后台 App、CLI 服务与额度客户端
+KimiQuota/              后台 App、CLI 服务与额度客户端
 KimiQuotaWidget/        WidgetKit 界面与 timeline
 Shared/                 共享额度模型和快照读写
 Scripts/build.sh        一键构建、签名验证与注册
